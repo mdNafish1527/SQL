@@ -1,0 +1,26 @@
+CREATE TABLE Employees(
+ Name VARCHAR(12) NOT NULL,
+ Age INT DEFAULT 12 NOT NULL,
+ PRIMARY KEY (Name),
+ Country VARCHAR(12)
+);
+
+SHOW TABLES;
+
+CREATE TABLE BS23(
+  ID INT NOT NULL,
+  PRIMARY KEY (ID),
+  Name VARCHAR(10) NOT NULL DEFAULT 'ABUL',
+  Salary INT NOT NULL
+);
+
+DESCRIBE BS23;
+
+INSERT INTO BS23 (ID,Salary,Name) VALUES
+				(1,1000,'Nafish'),
+                (2,2000,'Montkim'),
+                (3,3222,'Takuls');
+                
+SELECT * FROM BS23;
+SELECT Name FROM BS23;
+SELECT Name,Salary FROM BS23;
